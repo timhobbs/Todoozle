@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Todoozle!</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Todoozle!</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about" data-toggle="modal">About</a></li>
+              <li><a href="#contact" data-toggle="modal">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    @RenderBody()
+    <div id="about" class="modal hde fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-header">
+            <h3>About</h3>
+        </div>
+        <div class="modal-body">
+            <p>Todoozle! is the obligatory "todo" app created in backbone.js and utilizing ASP.NET WebAPI
+            for the server-side technology.</p>
+        </div>
+        <div class="modal-footer">
+            <a class="btn" href="#" data-dismiss="modal">Close</a>
+        </div>
+    </div>
+    <div id="contact" class="modal hde fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-header">
+            <h3>Contact</h3>
+        </div>
+        <div class="modal-body">
+            <p>Check out the <a href="#">Github project page</a> for contact information
+            or to fork the project and make your own additions and/or enhancements!</p>
+        </div>
+        <div class="modal-footer">
+            <a class="btn" href="#" data-dismiss="modal">Close</a>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/backbone")
+    @Scripts.Render("~/bundles/app")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

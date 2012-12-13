@@ -1,0 +1,97 @@
+﻿/*http://sampler.linotype.com/sam?ID=425203&text=Todoozle!&sizex=650&fontsize=32&fg_r=204&fg_g=204&fg_b=204&bg_r=255&bg_g=255&bg_b=255
+51 = #333, 204 = #CCC*/
+
+header .container {
+    background: url(images/header72.png) left top no-repeat;
+    height: 80px;
+    position: relative;
+}
+
+@media (min-width: 1200px) {
+    body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+    }
+
+    header .container {
+        background: url(images/header72.png) left top no-repeat;
+        height: 65px;
+    }
+}
+
+@media (min-width: 940px) {
+    body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+    }
+
+    header .container {
+        background: url(images/header72.png) left top no-repeat;
+        height: 65px;
+    }
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+    body {
+        padding-top: 0;
+    }
+
+    header .container {
+        background: url(images/header32.png) left top no-repeat;
+        height: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 0;
+    }
+
+    header .container {
+        background: url(images/header32.png) left top no-repeat;
+        height: 30px;
+    }
+}
+
+header h1 {
+    text-indent: -99999em;
+}
+
+header h1 sup small {
+    font-size: 12px;
+}
+
+.item [class^="icon-"] {
+    float: right;
+}
+
+.item input[type="text"] {
+    width: 95%;
+}
+
+.complete .name {
+    text-decoration: line-through;
+    font-style: italic;
+    color: #CCC;
+}
+
+.complete .label {
+    float: right;
+    font-weight: normal;
+}
+
+.complete i {
+    color: #3A87AD;
+}
+
+.edit {
+    color: #CCC;
+}
+
+.destroy {
+    color: #F00;
+}
+
+form fieldset {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 2px solid #333;
+}

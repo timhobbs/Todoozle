@@ -1,0 +1,43 @@
+﻿<header class="page-header">
+    <div class="container">
+        <h1>Todoozle!<sup><small>BETA</small></sup></h1>
+    </div>
+</header>
+<div class="container">
+    <div class="hero-unit hidden-phone" style="display: none;">
+        <h1>Welcome!</h1>
+        <p>Todoozle! is the obligatory "todo" app created in backbone.js and utilizing ASP.NET WebAPI
+        for the server-side technology.</p>
+        <a class="btn btn-primary btn-large" id="hero-close">
+            Get started
+        </a>
+    </div>
+    <div id="content">
+        <section id="todo-list">
+        </section>
+    </div>
+</div>
+
+<script type="text/html" id="list-item-template">
+    <label class="checkbox name">
+        <input type="checkbox" data-id="{{ Id }}" /><span>{{ Name }}</span>
+        <i class="icon-remove-sign destroy"></i>
+        <i class="icon-edit edit"></i>
+    </label>
+</script>
+
+<script type="text/html" id="list-item-complete-template">
+    <label class="checkbox name complete">
+        <input type="checkbox" data-id="{{ Id }}" checked /><span class="name">{{ Name }}</span>
+        <span class="label label-info visible-desktop">Completed on: {{ CompletedOn }}</span>
+        <i class="icon-time hidden-desktop" title="Completed on: {{ CompletedOn }}"></i>
+    </label>
+</script>
+
+<script type="text/html" id="new-todo-template">
+    <fieldset>
+        <label>Enter a new task</label>
+        <input type="text" id="new-todo" name="name" placeholder="Enter task..." />
+        <button type="submit" class="btn">Submit</button>
+    </fieldset>
+</script>
