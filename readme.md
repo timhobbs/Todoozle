@@ -13,7 +13,12 @@ Well, I think it is the _law_? Seriously though, it is an easy way to get starte
 
 How do I use it?
 ----------------
-The easiest way to get started is to open the solution file up in Visual Studio and hit F5. If you wan to get into the nuts and bolts of things, you can setup the site to run in IIS or IIS Express. I am also thinking about pushing it to AppHarbor, but I haven't yet done so.
+The easiest way to get started is to open the solution file up in Visual Studio and hit F5. If you wan to get into the nuts and bolts of things, you can setup the site to run in IIS or IIS Express. 
+
+If you want to edit the application javascript, you'll either need to muck about in the transpiled js or you'll want to have some way to edit the Coffeescript. The easiest way in the VS environment is to download the free Mindscape Web Workbench extension.
+http://visualstudiogallery.msdn.microsoft.com/2b96d16a-c986-4501-8f97-8008f9db141a
+
+I am also thinking about pushing it to AppHarbor, but I haven't yet done so.
 
 What's in the box?
 ------------------
@@ -25,6 +30,7 @@ All the latest buzzwords:
 * Underscore.js
 * Handlebars.js
 * jQuery Cookie plugin
+* Coffeescript
 
 How does it work?
 -----------------
