@@ -141,8 +141,12 @@
     <Content Include="Content\font-awesome-ie7.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font\fontawesome-webfont.svg" />
+    <Content Include="Content\images\beta12.png" />
+    <Content Include="Content\images\beta32.png" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
+    <Content Include="Content\images\header32.png" />
+    <Content Include="Content\images\header72.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\app.js">
